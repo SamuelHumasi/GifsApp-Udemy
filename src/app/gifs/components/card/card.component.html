@@ -1,11 +1,13 @@
 <div class="card mb-2 text-center bg-dark">
-    <img
-      [src]="gifs?.images?.downsized_medium?.url"
+
+    <shared-loader [source]="gifs" [loader]="'./assets/loader.svg'"></shared-loader>
+    <!-- <img
+      [src]="gifs.images.downsized_medium.url"
       class="card-img-top"
-      [alt]="gifs?.title"
+      [alt]="gifs.title"
       style="height: 200px;object-fit: cover"
-    />
+    /> -->
     <div class="card-body text-light" style="height: 80px">
-      <p class="card-text">{{ gifs?.title }}</p>
+      <p class="card-text">{{ gifs.title }}</p>
     </div>
   </div>
