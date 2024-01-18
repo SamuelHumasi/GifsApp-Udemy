@@ -8,7 +8,7 @@ export class GifsService {
 
   private _sheardTags: string[] = [];
   serviceUrl: string = 'https://api.giphy.com/v1/gifs';
-  api_key: string = 'c2YdxkM8VxovRu3xJ68OQu0rchHt9StV';
+  api_key: string = '<GIPHY API Key>';
 
   constructor(private _http: HttpClient) {
     this.getLocalStorage();
